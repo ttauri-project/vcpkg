@@ -1,4 +1,5 @@
 set(VCPKG_USE_HEAD_VERSION ON)
+set(VCPKG_FEATURE_FLAGS "-binarycaching")
 
 vcpkg_fail_port_install(ON_ARCH "x86" "arm" "arm64")
 vcpkg_fail_port_install(ON_TARGET "linux" "uwp" "osx")
